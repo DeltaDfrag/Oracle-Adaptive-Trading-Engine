@@ -52,3 +52,7 @@ if __name__ == "__main__":
     mode = input("Choose persona (jarvis/mcduck): ").strip().lower() or "jarvis"
     agent = LucidAuditor(persona=mode)
     print(agent.narrate())
+    import pyttsx3
+engine = pyttsx3.init()
+engine.say(agent.narrate())
+engine.runAndWait()
