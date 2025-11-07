@@ -63,3 +63,24 @@ else:
 
         st.subheader("Raw Data")
         st.dataframe(df.tail(50))
+# --- Add this near the bottom of dashboard/app.py ---
+from ops.auditor_agent import LucidAuditor
+
+st.divider()
+st.header("🎙️ LUCID Auditor — System Commentary")
+
+try:
+    auditor = LucidAuditor(persona="smithers")
+    report = auditor.narrate()
+    st.markdown(f"```\n{report}\n```")
+
+    # Optional voice output (local only; requires pyttsx3)
+    speak = st.checkbox("🔊 Read aloud (requires pyttsx3)", value=False)
+    if speak:
+        import pyttsx3
+        engine = pyttsx3.init()
+        engine.say(report)
+        engine.runAndWait()
+
+except Exception as e:
+    st.error(f"Auditor unavailable: {e}")
