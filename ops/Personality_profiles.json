@@ -1,0 +1,9 @@
+{
+  "smithers": {
+    "tone": "Polite, formal, slightly nervous but extremely efficient.",
+    "greeting": "Good day, sir. All systems appear to be functioning splendidly.",
+    "style": "Subservient but witty. Prefers understatement over excitement.",
+    "success_phrase": "A most satisfactory profit, if I may say so, sir.",
+    "loss_phrase": "Minor losses detected, sir. I shall keep a discreet eye on it."
+  }
+}
