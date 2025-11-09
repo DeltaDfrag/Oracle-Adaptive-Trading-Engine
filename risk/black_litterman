@@ -19,17 +19,22 @@ def black_litterman_model(
     P: np.ndarray,
     Q: np.ndarray,
     tau: float = TAU_CONFIDENCE,
+    regularization: float = 1e-6,
 ) -> Tuple[np.ndarray, np.ndarray]:
-    """Black–Litterman posterior E[R], Σ_BL"""
+    """Black–Litterman posterior expected returns (E[R]) and posterior covariance matrix (Σ_BL)."""
     pi = calculate_implied_market_returns(w_market, cov)
     tau_cov = tau * cov
     Omega = P @ tau_cov @ P.T
     try:
         Omega_inv = np.linalg.inv(Omega)
     except np.linalg.LinAlgError:
-        Omega_inv = np.linalg.inv(Omega + np.eye(Omega.shape[0]) * 1e-6)
+        reg_value = regularization * np.linalg.norm(Omega)
+        Omega_inv = np.linalg.inv(Omega + np.eye(Omega.shape[0]) * reg_value)
     tau_cov_inv = np.linalg.inv(tau_cov)
     A = np.linalg.inv(tau_cov_inv + P.T @ Omega_inv @ P)
+    B = tau_cov_inv @ pi + P.T @ Omega_inv @ Q
+    er_bl = A @ B
+    return er_bl, A
     B = tau_cov_inv @ pi + P.T @ Omega_inv @ Q
     er_bl = A @ B
     return er_bl, A

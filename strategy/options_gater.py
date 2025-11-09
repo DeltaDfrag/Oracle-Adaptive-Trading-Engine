@@ -43,7 +43,7 @@ DEFAULT_MAX_DTE = 90
 
 def options_gating_mechanism(
     signal: LucidSignal,
-    metrics: OptionsMetrics,
+    metrics: 'OptionsMetrics',
     current_equity: float,
     current_0_1_dte_count: int
 ) -> OptionTrade:
