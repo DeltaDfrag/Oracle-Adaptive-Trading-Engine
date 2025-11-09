@@ -4,9 +4,10 @@
     "PYTHONUTF8": "1"
   },
   "python.analysis.extraPaths": [
-    "./core",
-    "./risk",
-    "./strategy",
-    "./ops"
+    "${workspaceFolder}/core",
+    "${workspaceFolder}/risk",
+    "${workspaceFolder}/strategy",
+    "${workspaceFolder}/ops"
   ]
 }
+
