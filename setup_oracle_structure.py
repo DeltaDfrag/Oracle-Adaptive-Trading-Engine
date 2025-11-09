@@ -19,7 +19,7 @@ folders = [
 base_files = {
     "core/smith.py": "# ORACLE_SMITH: Signal generation, meta-model gating, regime detection\n",
     "core/oracle.py": "# ORACLE_ENGINE: Risk sizing, Kelly/CVaR governance, Black-Litterman integration\n",
-    "core/lucid.py": "# ORACLE_LUCID: Market feature extraction, snapshot creation, feed to SMITH\n",
+    "core/lucid_common.py": "# ORACLE_LUCID: Market feature extraction, snapshot creation, feed to SMITH\n",
     "core/circuit_breaker.py": "# ORACLE_CIRCUIT_BREAKER: Tail risk monitoring and kill switch logic\n",
     "core/hedger.py": "# ORACLE_HEDGER: Systemic hedge management (HMM state / SVI based)\n",
     "data/loaders.py": "# ORACLE_DATA_LOADERS: Fetch and cache market/option data\n",
