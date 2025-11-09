@@ -17,8 +17,7 @@ from typing import Dict, Any, List, Tuple
 import numpy as np
 
 # ---- Internal imports ----
-from core.lucid_common import OptionsMetrics, OptionsTradeDetails
-from core.lucid_pulse import LucidPulse
+from core.lucid import OptionsMetrics, OptionsTradeDetails
 from ops.config import (
     SMALL_ACCOUNT_RISK,
     META_THRESHOLD,

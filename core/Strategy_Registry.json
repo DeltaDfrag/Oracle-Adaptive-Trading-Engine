@@ -2,19 +2,44 @@
   "capital_tiers": [
     {
       "min_equity": 0,
-      "strategies": ["micro_spread", "micro_swing", "macro_rotation", "hedge_overlay"]
+      "strategies": [
+        "Directional Equity"
+      ]
     },
     {
-      "min_equity": 7500,
-      "strategies": ["credit_spreads", "multi_etf_rotation", "pairs_trading"]
+      "min_equity": 5000,
+      "strategies": [
+        "Directional Equity",
+        "Short Credit Vertical Spread"
+      ]
     },
     {
       "min_equity": 15000,
-      "strategies": ["options_income", "sector_rotation"]
+      "strategies": [
+        "Directional Equity",
+        "Short Credit Vertical Spread",
+        "Long Debit Vertical Spread"
+      ]
     },
     {
-      "min_equity": 50000,
-      "strategies": ["full_risk_parity", "high_vol_alpha"]
+      "min_equity": 30000,
+      "strategies": [
+        "Directional Equity",
+        "Short Credit Vertical Spread",
+        "Long Debit Vertical Spread",
+        "Short Iron Condor"
+      ]
+    },
+    {
+      "min_equity": 100000,
+      "strategies": [
+        "Directional Equity",
+        "Short Credit Vertical Spread",
+        "Long Debit Vertical Spread",
+        "Short Iron Condor",
+        "Hedged Delta Neutral"
+      ]
     }
   ]
 }
+
