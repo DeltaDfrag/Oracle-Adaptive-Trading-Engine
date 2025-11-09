@@ -1,0 +1,39 @@
+# === Core Scientific & Data Libraries ===
+numpy>=1.26.0
+pandas>=2.2.0
+scipy>=1.12.0
+matplotlib>=3.8.0
+seaborn>=0.13.0
+statsmodels>=0.14.0
+
+# === Machine / Reinforcement Learning ===
+torch>=2.2.0
+torchvision>=0.17.0
+scikit-learn>=1.5.0
+gymnasium>=0.29.0
+stable-baselines3>=2.3.0
+optuna>=3.5.0
+
+# === Financial & Market Analysis ===
+yfinance>=0.2.40
+ta>=0.11.0
+pyportfolioopt>=1.5.6
+pandas-datareader>=0.10.0
+
+# === Risk / Quant Extensions ===
+cvxpy>=1.4.0
+arch>=6.3.0
+pymc>=5.12.0
+empyrical>=0.5.5
+
+# === Visualization / Dashboard ===
+streamlit>=1.39.0
+plotly>=5.22.0
+altair>=5.3.0
+
+# === Misc Tools ===
+tqdm>=4.66.0
+requests>=2.31.0
+joblib>=1.4.0
+psutil>=5.9.8
+pydantic>=2.8.0

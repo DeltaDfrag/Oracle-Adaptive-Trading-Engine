@@ -1,0 +1,38 @@
+2025-11-09 00:36:14,908 - INFO - Fetching options chain for SPY
+2025-11-09 00:36:26,502 - INFO - Saved 7003 rows to data/raw/options\SPY_options_2025-11-09.csv
+2025-11-09 00:36:26,502 - INFO - Fetching options chain for QQQ
+2025-11-09 00:36:37,975 - INFO - Saved 6725 rows to data/raw/options\QQQ_options_2025-11-09.csv
+2025-11-09 00:36:37,976 - INFO - Fetching options chain for AAPL
+2025-11-09 00:36:45,229 - INFO - Saved 2144 rows to data/raw/options\AAPL_options_2025-11-09.csv
+2025-11-09 00:36:45,229 - INFO - Fetching options chain for TSLA
+2025-11-09 00:36:53,861 - INFO - Saved 4610 rows to data/raw/options\TSLA_options_2025-11-09.csv
+2025-11-09 00:36:53,863 - INFO - Fetching options chain for NVDA
+2025-11-09 00:37:02,136 - INFO - Saved 5034 rows to data/raw/options\NVDA_options_2025-11-09.csv
+2025-11-09 00:50:00,919 - INFO - Fetching options chain for SPY
+2025-11-09 00:50:12,732 - INFO - Saved 7003 rows to data/raw/options\SPY_options_2025-11-09.csv
+2025-11-09 00:50:12,732 - INFO - Fetching options chain for QQQ
+2025-11-09 00:50:24,175 - INFO - Saved 6725 rows to data/raw/options\QQQ_options_2025-11-09.csv
+2025-11-09 00:50:24,175 - INFO - Fetching options chain for AAPL
+2025-11-09 00:50:31,340 - INFO - Saved 2144 rows to data/raw/options\AAPL_options_2025-11-09.csv
+2025-11-09 00:50:31,341 - INFO - Fetching options chain for TSLA
+2025-11-09 00:50:39,786 - INFO - Saved 4610 rows to data/raw/options\TSLA_options_2025-11-09.csv
+2025-11-09 00:50:39,786 - INFO - Fetching options chain for NVDA
+2025-11-09 00:50:47,864 - INFO - Saved 5034 rows to data/raw/options\NVDA_options_2025-11-09.csv
+2025-11-09 00:53:56,048 - INFO - Starting options data fetch…
+2025-11-09 00:54:06,534 - INFO - SPY: 7003 rows saved.
+2025-11-09 00:54:16,775 - INFO - QQQ: 6725 rows saved.
+2025-11-09 00:54:22,966 - INFO - AAPL: 2144 rows saved.
+2025-11-09 00:54:30,330 - INFO - TSLA: 4610 rows saved.
+2025-11-09 00:54:37,016 - INFO - NVDA: 5034 rows saved.
+2025-11-09 00:59:26,663 - INFO - Starting options data fetch…
+2025-11-09 00:59:36,390 - INFO - SPY: 7003 rows saved.
+2025-11-09 00:59:45,832 - INFO - QQQ: 6725 rows saved.
+2025-11-09 00:59:51,816 - INFO - AAPL: 2144 rows saved.
+2025-11-09 00:59:58,721 - INFO - TSLA: 4610 rows saved.
+2025-11-09 01:00:05,072 - INFO - NVDA: 5034 rows saved.
+2025-11-09 01:21:15,357 - INFO - Starting options data fetch…
+2025-11-09 01:21:25,460 - INFO - SPY: 7003 rows saved.
+2025-11-09 01:21:35,460 - INFO - QQQ: 6725 rows saved.
+2025-11-09 01:21:41,737 - INFO - AAPL: 2144 rows saved.
+2025-11-09 01:21:48,799 - INFO - TSLA: 4610 rows saved.
+2025-11-09 01:21:55,258 - INFO - NVDA: 5034 rows saved.
