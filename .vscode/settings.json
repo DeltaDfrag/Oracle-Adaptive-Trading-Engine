@@ -1,0 +1,12 @@
+{
+  "terminal.integrated.env.windows": {
+    "PYTHONIOENCODING": "utf-8",
+    "PYTHONUTF8": "1"
+  },
+  "python.analysis.extraPaths": [
+    "./core",
+    "./risk",
+    "./strategy",
+    "./ops"
+  ]
+}

@@ -1,4 +1,16 @@
-# ORACLE_ENGINE: Risk sizing, Kelly/CVaR governance, Black-Litterman integration
+"""
+ORACLE Engine Core
+
+High-level responsibilities:
+- Enforce config/sizing integrity (Kelly, CVaR, max position caps).
+- Use MetaModel to gate low-quality signals.
+- Use Strategy Registry to restrict allowed structures by equity tier.
+- Use options_gater to select structures (spreads, condors, etc.).
+- Size positions via tempered Kelly + CVaR cap (+ Black-Litterman multiplier hook).
+- Provide a single approve(snapshot) entrypoint for backtests and live trading.
+"""
+
+import time
 import json
 
 def load_allowed_strategies(equity: float, registry_path="./core/strategy_registry.json"):
@@ -12,3 +24,5 @@ def load_allowed_strategies(equity: float, registry_path="./core/strategy_regist
         else:
             break
     return allowed
+if __name__ == "__main__":
+    print("ORACLE Engine initialized and ready.")
