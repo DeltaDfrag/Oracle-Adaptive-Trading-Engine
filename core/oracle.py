@@ -18,6 +18,7 @@ import numpy as np
 
 # ---- Internal imports ----
 from core.lucid_common import OptionsMetrics, OptionsTradeDetails
+from core.lucid_pulse import LucidPulse
 from ops.config import (
     SMALL_ACCOUNT_RISK,
     META_THRESHOLD,
@@ -82,6 +83,7 @@ def load_allowed_strategies(
 # ============================================================
 
 meta_model = MetaModel(threshold=META_THRESHOLD)
+lucid_pulse = LucidPulse()
 
 def _check_integrity() -> None:
     """
@@ -414,6 +416,15 @@ def approve(snapshot: Dict[str, Any]) -> Dict[str, Any]:
         "heartbeat": time.time(),
         "veto_reason": getattr(rec, "reason", "") if not approved else "",
     })
+
+    # --- Update LucidPulse with the latest trade event ---
+    pulse_update = lucid_pulse.register(
+        confidence=conf,
+        risk_dollars=details.max_risk_dollars or 0.0,
+        expected_alpha=expected_alpha,
+    )
+
+    decision["lucid_pulse"] = pulse_update
 
     return decision
 
