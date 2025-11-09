@@ -44,7 +44,7 @@ except ImportError:
 
 def load_allowed_strategies(
     equity: float,
-    registry_path: str = "core/Strategy_Registry.json",
+    registry_path: str = "core/strategy_registry.json"
 ) -> List[str]:
     """
     Returns list of enabled strategies based on account equity.
@@ -82,7 +82,6 @@ def load_allowed_strategies(
 # ============================================================
 
 meta_model = MetaModel(threshold=META_THRESHOLD)
-lucid_pulse = LucidPulse()
 
 def _check_integrity() -> None:
     """
@@ -415,15 +414,6 @@ def approve(snapshot: Dict[str, Any]) -> Dict[str, Any]:
         "heartbeat": time.time(),
         "veto_reason": getattr(rec, "reason", "") if not approved else "",
     })
-
-    # --- Update LucidPulse with the latest trade event ---
-    pulse_update = lucid_pulse.register(
-        confidence=conf,
-        risk_dollars=details.max_risk_dollars or 0.0,
-        expected_alpha=expected_alpha,
-    )
-
-    decision["lucid_pulse"] = pulse_update
 
     return decision
 
